@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+.edit_view_result_header{
+	width: 100%;
+	padding-top: 12px;
+} 
+.edit_view_result_header h4{
+	margin:0;
+	color: rgb(129,117,146);
+	font-size: 2em;
+}
+.students_container{
+	width: 100%;
+	padding: 20px;
+	min-height: 300px;
+	margin: 0;
+	overflow-x: auto;
+}
+.students_container .each_student{
+	width: 90%;
+	margin: 0;
+	padding: 0px;
+	border: 1px solid #343434;
+	padding-bottom: 0px;
+	overflow-x: auto;
+	margin-bottom: 12px;
+}
+.students_container .each_student .student_header{
+	width: 100%;
+	padding-top: 20px;
+}
+.students_container .each_student .student_header p{
+	padding: 4px;
+	margin: 0;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+.students_container .each_student .student_header p span span{
+	color: rgb(190,75,73);
+	font-weight: bold;
+}
+.students_container .each_student .student_header p span.start_h{
+	display: inline-block;
+	width: 49%;
+	text-align: left;
+	padding-left: 4%;
+}
+.students_container .each_student .student_header p span.end_h{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	padding-right: 4%;
+}
+.students_container .each_student table{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	page-break-after: auto;
+}
+.students_container .each_student table tr{
+	min-height: 35px;
+	width: 100%;
+	overflow: scroll;
+	page-break-inside: avoid;
+	page-break-after: auto;
+}
+.students_container .each_student table tr:nth-child(1){
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #eee;
+	background-color: rgb(129,117,146);
+}
+.students_container .each_student table tr:nth-child(even){
+	background-color: rgb(243,237,246);
+}
+.students_container .each_student table tr td{
+	border:1px solid #343434;
+	padding: 4px;
+	text-align: center;
+	font-size: 1.18em;
+	transition: .1s;
+}
+.students_container .each_student table tr td:first-child:not(.first-col-header){
+	text-align: left;
+	padding-left: 8px;
+}
+.contents .down_down{
+	width: 100%;
+	display: block;
+	text-align: right;
+	overflow: auto;
+	padding-bottom: 25px;
+}
+.contents .down_down button#downloadResult{
+	padding: 2px 15px;
+	background-color: rgb(254,96,59);
+	color: #eee;
+	border-radius: 2px;
+	border:none;
+	margin-bottom: 8px;
+	float:  right;
+	display: block;
+	margin-top: 28px;
+	margin-right: 8px;
+	font-size: 1.3em;
+	transition: all .18s;
+}
+button:hover{
+	opacity: .85;
+}
+
+@media only screen and (max-width: 800px){
+	.students_container .each_student .student_header p span.start_h{
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding:2px;
+	}
+	.students_container .each_student .student_header p span.end_h{
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding:2px;
+	}
+
+}
+@media print{
+	.container_div,.container_div *{visibility: collapse !important;}
+	.container_div .left_divs,.container_div .header_div{display: none;}
+	.contents .view-all-result-wrappers,
+	.contents .view-all-result-wrappers *{
+		visibility: visible !important;
+		padding-top: 10px;
+	}
+	.contents .view-all-result-wrappers{width: 1100px;}
+	/*.contents .view-all-result-wrappers .each_student{height: 800px;}*/
+	.contents .down_down{display: none;}
+
+	@page{margin: 0 !important;}

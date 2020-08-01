@@ -1,0 +1,307 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+.contents .students_container_result_wrapper{
+	/*overflow-x:auto;
+	min-width: 1050px;*/
+}
+.students_container_result{
+	/*width: 100%;*/
+	width: 960px;
+	padding: 20px;
+	min-height: 300px;
+	margin: 0;
+	overflow-x: auto;
+	background-color: #FFF;
+}
+.students_container_result .each_student{
+	width: 98%;
+	margin: 0;
+	padding: 0px;
+	border: 1px solid #343434;
+	padding-bottom: 0px;
+	overflow-x: auto;
+	margin-bottom: 12px;
+}
+.students_container_result .each_student .student_header{
+	width: 100%;
+}
+.students_container_result .each_student .student_header .result_header{
+	width: 100%;
+	padding-bottom: 12px;
+}
+.students_container_result .each_student .student_header .result_header .logo{
+	width: 15%;
+	vertical-align: top;
+	display: inline-block;
+/*	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120px;	*/
+}
+.students_container_result .each_student .student_header .result_header .school_name{
+	width: 70%;
+	vertical-align: top;
+	display: inline-block;
+	text-align: left;
+	text-align: center;
+	padding: 20px;
+}
+.students_container_result .each_student .student_header .result_header .school_name p{
+	margin: 0;
+	padding: 20px;
+	font-size: 1.5em;
+	color: rgb(137,121,121);
+}
+.students_container_result .each_student .student_header .result_header .profile_p{
+	width: 15%;
+	vertical-align: top;
+	display: inline-block;
+	text-align: right;
+}
+.students_container_result .each_student .student_header .result_header img{
+	display: inline;
+	height: 120px;
+	width: 100%;
+}
+.students_container_result .each_student .student_header table#students_details{
+	width: 100%
+	margin:0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.students_container_result .each_student .student_header table#students_details{
+	min-height: 35px;
+	width: 100%;
+	overflow: scroll;
+}
+.students_container_result .each_student .student_header table#students_details tr td:nth-child(even){
+	border-bottom: 2px solid rgb(129,117,146);
+	color: rgb(137,121,121);
+}
+.students_container_result .each_student .student_header table#students_details tr td{
+	border:0px solid #343434;
+	padding: 2px 8px;
+	text-align: left;
+	font-size: 1.05em;
+	transition: .1s;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #555;
+}
+.students_container_result .each_student .student_header p{
+	padding: 4px;
+	margin: 0;
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+.students_container_result .each_student .student_header p span span{
+	color: rgb(190,75,73);
+	font-weight: bold;
+}
+.students_container_result .each_student .student_header p span.start_h{
+	display: inline-block;
+	width: 49%;
+	text-align: left;
+	padding-left: 4px;
+}
+.students_container_result .each_student .student_header p span.end_h{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	padding-right: 4px;
+}
+.students_container_result .each_student table#subjects{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	margin-top: 8px;
+}
+.students_container_result .each_student table#subjects tr{
+	min-height: 35px;
+	width: 100%;
+	overflow: scroll;
+}
+.students_container_result .each_student table#subjects tr:nth-child(1){
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff !important;
+	background-color: rgb(129,117,146);
+	/*background-color: #555;*/
+	border-bottom: 1px solid rgb(250,250,250);
+	font-size: 1.2em;
+}
+.students_container_result .each_student table#subjects tr:nth-child(1) td{
+	text-align: center;
+	padding: 6px;	
+}
+.students_container_result .each_student table#subjects tr:nth-child(2){
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff !important;
+	background-color: rgb(129,117,146);
+	font-size: 1em;
+	/*background-color: #555;*/
+}
+.students_container_result .each_student table#subjects tr:nth-child(even):not(#two){
+	background-color: rgb(243,237,246);
+}
+.students_container_result .each_student table#subjects tr td{
+	border:1px solid #343434;
+	padding: 8px 2px;
+	text-align: center;
+	font-size: .9em;
+	text-transform: uppercase;
+}
+.students_container_result .each_student table#subjects td:nth-child(1){
+	border-left: 0px solid #343434;
+	text-align: left;
+	padding-left: 12px;
+}
+.students_container_result .each_student table#subjects td:nth-child(10){
+	/*border-right: 0px solid #343434;*/
+}
+.students_container_result .each_student table#subjects tr td:last-child:not(.last):not(.termly_a_r){
+	text-transform: capitalize;
+}
+.students_container_result .each_student table#subjects tr#two td:not(.first){
+	/*margin-top: -40px;*/
+}
+.students_container_result .each_student table#subjects tr#two td:nth-child(1){
+	text-align: center;	
+}
+.students_container_result .each_student .comment{
+	width: 100%;
+	padding: 2px 5px;
+	font-size: 1.1em;
+	text-align: left;
+	text-transform: uppercase;
+	margin: 0;	
+}
+.students_container_result .each_student #score_letter_grade{
+	width: 100%;
+	padding: 0;
+	font-size: 1.14em;
+	font-style: italic;
+	text-align: left;
+	text-transform: capitalize;	
+	margin:0;
+}
+.students_container_result .each_student #score_letter_grade table{
+	width: 100%;
+	margin:0;
+	padding: 0;
+	display: block;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+.students_container_result .each_student #score_letter_grade table tr{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 1px solid rgba(129,117,146,.4);
+}
+.students_container_result .each_student #score_letter_grade table tr td{
+	padding: 2px 1px;
+	border-right: 1px solid rgba(129,117,146,.4);
+	font-size: .8em;
+	width: 8%;
+}
+.students_container_result .each_student #score_letter_grade table tr td:nth-child(1){
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 15%;
+}
+.students_container_result .each_student #score_letter_grade table tr td:nth-child(3){	
+	width: 12%;
+}
+
+.students_container_result .each_student .comment table#r_footer{
+	width: 100%
+	margin:0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.students_container_result .each_student .comment table#r_footer tr{
+	min-height: 35px;
+}
+.students_container_result .each_student .comment table#r_footer tr td{
+	/*min-height: 35px;*/
+	/*width: 25%;*/
+	padding: 4px 5px;
+	font-size: .9em;
+}
+.students_container_result .each_student .comment table#r_footer tr td:nth-child(even){
+	border-bottom: 2px solid rgb(129,117,146);
+	color: rgb(137,121,121);
+}
+.contents .down_down{
+	width: 100%;
+	display: block;
+	text-align: right;
+	overflow: auto;
+	padding-bottom: 25px;
+}
+.contents .down_down button#downloadResult{
+	padding: 2px 15px;
+	background-color: rgb(254,96,59);
+	color: #eee;
+	border-radius: 2px;
+	border:none;
+	margin-bottom: 8px;
+	float:  right;
+	display: block;
+	margin-top: 28px;
+	margin-right: 8px;
+	font-size: 1.3em;
+	transition: all .18s;
+}
+button:hover{
+	opacity: .85;
+}
+
+@media print{
+	body {-webkit-print-color-adjust: exact;}
+
+	.container_div,.container_div *{visibility: collapse !important;}
+	.container_div .left_divs,.container_div .header_div{display: none;	font-size: .9em;
+	}
+	.container_div .students_container_result{
+		width: 960px;
+	}
+	.students_container_result .each_student,
+	.students_container_result .each_student *{
+		visibility: visible !important;
+	}
+
+	.students_container_result .each_student table#subjects tr:nth-child(1) *,
+	.students_container_result .each_student table#subjects tr:nth-child(2) *{
+		color: #fff !important;
+		background-color: rgb(129,117,146) !important;
+		-webkit-print-color-adjust:exact;
+		-moz-print-color-adjust:exact;
+		-ms-print-color-adjust:exact;
+		-o-print-color-adjust:exact;
+		print-color-adjust:exact;
+	}
+	.students_container_result .each_student table#subjects tr:nth-child(even):not(#two){
+		background-color: rgb(243,237,246) !important;
+		-webkit-print-color-adjust:exact;
+		-moz-print-color-adjust:exact;
+		-ms-print-color-adjust:exact;
+		-o-print-color-adjust:exact;
+		print-color-adjust:exact;
+	}
+
+	@page{
+		margin: 0 !important;
+	}
+}

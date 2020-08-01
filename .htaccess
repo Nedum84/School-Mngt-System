@@ -1,0 +1,25 @@
+Options +MultiViews
+RewriteBase /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+ErrorDocument 404 /php/index.php
+
+#stop access to anything ending in .php,.rb in uploads folder
+RewriteRule ^uploads/.*\.(php|png|jpg)$ - [F,L,NC]
+RewriteRule ^inc/.*\.(php|png|jpg)$ - [F,L,NC]
+
+<Files .htaccess>
+Deny from all
+</Files>
+<FilesMatch "\.(ini|psd|log|sh)$">
+Deny from all
+</FilesMatch>
+
+
+# Deny access to filenames starting with dot(.) like .htaccess,  .htpass
+<FilesMatch "^\.">
+Deny from all
+</FilesMatch>

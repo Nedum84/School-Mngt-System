@@ -1,0 +1,227 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.container_div .profile_welcome#welcome{
+	width: 100%;
+	min-height: 30px;
+	background-color: #FAFAFA;
+}
+.container_div .profile_welcome#welcome h4{
+	font-size: 1.4em;
+	padding: 5px 4px;
+	margin: 0;
+	color: rgb(137,121,121);
+	padding-left: 8%;
+	/*border-top: 1px solid rgba(113,112,118,.4);*/
+	border-bottom: 1px solid rgba(113,112,118,.4);
+	box-shadow: 1px 1px 1px #eee;
+	text-align: left;
+}
+.container_div #welcome h4 span{
+	color: rgb(190,75,73);
+	display: inline-block;
+	padding-left: 20px;
+	text-align: center;
+}
+.container_div .edit_user_wrapper{
+	width: 100%;
+	min-height: 400px;
+	padding-top: 20px;
+}
+.container_div .edit_user_wrapper .edit_user{
+	width: 100%;
+	padding: 4px 10px;
+	display: block;
+	text-align: left;
+	padding-bottom: 50px;
+}
+.container_div .edit_user_wrapper .edit_user .profile_img_show{
+	width: 100%;
+	text-align: left;
+	padding-bottom: 12px;
+}
+.container_div .edit_user_wrapper .edit_user .profile_img_show label{
+	padding-left: 4px;
+	text-align: right;
+	display: inline-block;
+	width: 35%;
+	padding-right: 12px;
+}
+.container_div .edit_user_wrapper .edit_user .profile_img_show label img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+.container_div .edit_user_wrapper .edit_user .profile_img_show span{
+	display: inline-block;
+	padding:2px 2px 2px 10px;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #343434;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon{
+	width: 100%;
+	display: block;
+	padding: 0px;
+	position: relative;
+	text-align: left;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon label{
+	color: rgb(73,51,51);
+	padding-left: 4px;
+	text-align: right;
+	display: inline-block;
+	width: 35%;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-right: 12px;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon select,
+.container_div .edit_user_wrapper .edit_user .input_with_icon input{
+	width: 40%;
+	height: 37px;
+	border: none;
+	border-radius: 1px;
+	border: 1px solid rgba(137,121,121,.3);
+	margin-bottom: 18px;
+	padding:2px 2px 2px 10px;
+	color: #797979;
+	font-size: 1.2em;
+	transition: all .1s;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon select option{
+	padding-left: 12px;
+	height: 30px;
+	border-bottom: 1px solid rgba(137,121,121,.3);
+	padding-top: 4px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon label#browse_label{
+	color: #eee;
+	font-weight: lighter;
+	text-align: center;
+	cursor: pointer;
+	width: 40%;
+	height: 37px;
+	border: none;
+	border-radius: 1px;
+	background-color: rgb(190,75,73);
+	border: 1px solid rgba(137,121,121,.3);
+	margin-bottom: 18px;
+	padding: 5px 2px 2px 10px;
+	font-size: 1.2em;
+	transition: all .1s;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon input[type=file]{
+	visibility: hidden;
+	height: 0;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon span.error{
+	height: 18px;
+	display: block;
+	width: 100%;
+	padding-left: 4px;
+	color: rgb(231,80,90);
+	font-style: italic;
+	font-weight: bold;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon p{
+	padding: 8px;
+	display: inline;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon p a{
+	text-decoration: none;
+	color: rgb(46,53,105);
+	transition: all .1s;
+	font-size: 1.1em;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon a:hover{
+	text-decoration: underline;
+}
+/*password*/
+.container_div .edit_user_wrapper .edit_user h4{
+	font-size: 1.4em;
+	padding: 25px 4px;
+	margin: 0;
+	color: rgb(137,121,121);
+	padding-left: 18%;
+	box-shadow: 1px 1px 1px #eee;
+	text-align: left;
+}
+.container_div .edit_user_wrapper .edit_user .input_with_icon button{
+	margin-top: 0;
+	padding: 6px 10px;
+	min-width: 150px;
+	display: inline-block;
+	color: rgb(236,255,255);
+	background-color: rgb(0,102,190);
+	border:none;
+	font-size: 1.15em;
+	border-radius: 1px;
+}
+.container_div .edit_user_wrapper .edit_user .passBtnDiv button#updateBtn{
+	background-color: rgb(255,87,51);
+}
+
+
+
+
+@media only screen and (max-width: 960px){
+	.container_div .edit_user_wrapper .edit_user{
+		padding: 20px 2px;
+	}
+	.container_div .edit_user_wrapper .edit_user .input_with_icon input,
+	.container_div .edit_user_wrapper .edit_user .input_with_icon select,
+	.container_div .edit_user_wrapper .edit_user .input_with_icon label#browse_label{
+		width: 63%;
+	}
+}
+@media only screen and (max-width: 700px){
+	.container_div .edit_user_wrapper .edit_user .profile_img_show label{
+		width: auto;
+	}
+	.container_div .edit_user_wrapper .edit_user .input_with_icon label{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.container_div .edit_user_wrapper .edit_user .input_with_icon input,
+	.container_div .edit_user_wrapper .edit_user .input_with_icon select,
+	.container_div .edit_user_wrapper .edit_user .input_with_icon label#browse_label{
+		display: block;
+		width: 100%;
+	}
+	.container_div .edit_user_wrapper .edit_user .input_with_icon label.remove_hide{
+		display: none;
+	}
+	.container_div .edit_user_wrapper .edit_user .input_with_icon p{
+		padding: 8px;
+		display: block;
+	}
+	.container_div .edit_user_wrapper .edit_user h4{
+		padding: 20px 4px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 530px){
+	.container_div .edit_user_wrapper .edit_user{
+		width: 100%;
+		padding: 4px 8px;
+		display: block;
+	}
+	.container_div .edit_user_wrapper .edit_user .input_with_icon,.passBtnDiv{
+		width: 100%;
+		display: block;
+	}
+}

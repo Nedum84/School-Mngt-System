@@ -1,0 +1,305 @@
+.contents .button_dolder{
+	width: 100%;
+	padding: 12px;
+	margin: 0;
+	text-align: left;
+}
+button.btnEffects{
+	padding: 0px;
+	margin-bottom: 5px;
+	color: #eee;
+	font-size: 1em;
+	background-color: rgb(0,102,190);
+	border: none;
+	border-radius: 2px;
+	font-weight: bold;
+	display: inline-block;
+	width: 20%;
+}
+.btnEffects div.btnIcon_info{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	background-color: rgba(0,0,0,.2);
+	text-align: center;
+	vertical-align: top;
+}
+.btnEffects div.btnIcon_info i{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 2.2em;
+	padding-top: 12px;
+}
+.btnEffects div.btnDetail_info{
+	width: calc(100% - 55px);
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 6px;
+	text-align: left;
+}
+.btnEffects div.btnDetail_info h4{
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: .8em;
+	margin: 0;
+	margin-bottom: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+.btnEffects div.btnDetail_info .progress_div{
+	background: rgba(0, 0, 0, 0.2);
+	margin: 1px -6px 1px -6px;
+	height: 2px;
+}
+.btnEffects div.btnDetail_info .progress_div div{
+	width: 0;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: #eee;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition: width .6s ease;
+	-o-transition: width .6s ease;
+	transition: width .6s ease;
+}
+.btnEffects div.btnDetail_info .progress-description{
+	display: block;
+	font-size: .9em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.contents .button_dolder button:nth-child(2){
+	background-color: rgb(255,87,51);
+}
+.contents .button_dolder button:nth-child(3){
+	background-color: rgb(196,99,98);
+}
+.contents .button_dolder button:nth-child(4){
+	background-color: rgb(66,158,10);
+	background-color: rgb(0, 166, 90);
+}
+.contents .news_cols_wrapper{
+	width: 100%;
+	margin: 0;
+	padding: 20px 4%;
+}
+.contents .news_cols_wrapper h5{
+	margin: 0;
+	font-size: 1.3em;
+	text-align: left;
+	padding-bottom: 12px;
+	color: #343434;
+}
+.contents .news_cols_wrapper .news_cols{
+	width: 100%;
+	border: 1px solid rgba(137,121,121,.4);
+	padding: 6px;
+	margin-bottom: 12px;
+	border-radius: 2px;
+	text-align: left;
+	padding-left: 12px;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: #555;
+	overflow: hidden;
+}
+.contents .news_cols_wrapper .news_cols span{
+	font-size: .9em;
+	color: #555;
+	font-weight: bold;
+}
+.contents .news_cols_wrapper .news_cols i.fa{
+	color: rgb(196,99,98,.4);
+	font-style: italic;
+	float: right;
+	font-size: 1.2em;
+	display: inline-block;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+.st_teachers_modal .news_body div{
+	padding: 12px;
+}
+.st_teachers_modal .news_body div img{
+	display: block;
+	width: 100%;
+	margin-bottom: 8px;
+	max-height: 400px;
+}
+.st_teachers_modal .news_body div p{
+	text-indent: 18px;
+	text-align: justify;	
+	font-size: 1.1em;	
+}
+.st_teachers_modal span.error{
+	display: block;
+	min-height: 25px;
+	font-size: 1.3em;
+	font-style: italic;
+	color: rgb(190,75,73);
+	text-align: center;
+}
+.st_teachers_modal .news_body .sent_n_fill{
+	width: 100%;
+	padding: 8px;
+	font-size: 1.1em;
+	color: rgb(76,76,76);
+}
+.st_teachers_modal .news_body .sent_n_fill .sent_n_cols{
+	width: 100%;
+	border-bottom: 1px solid #555;
+	text-align: left;
+}
+.st_teachers_modal .news_body .sent_n_fill span{
+	font-weight: bold;
+	color: rgb(40,96,144);
+	text-transform: capitalize;
+}
+.st_teachers_modal .news_body .sent_n_fill button{
+	padding: 2px 6px;
+	height: 30px;
+	color: #eee;
+	background-color: rgb(0,102,190);
+	border: none;
+	border-radius: 2px;
+	font-weight: bold;
+	display: inline;
+	margin-left: 2px;
+}
+#view_news .news_info_fill img{
+	height: auto;
+}
+@media only screen and (max-width: 700px){
+	button.btnEffects{
+		width: 100%;
+		margin-bottom: 8px;
+		display: block;
+	}
+}
+
+/*
+for news panel*/
+.news_panel_wrapper{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.news_panel_wrapper .news_panel_each{
+	width: 100%;
+	padding: 2px 12px;
+	margin: 0;
+	text-align: left;	
+}
+.news_panel_wrapper .news_panel_each input,
+.news_panel_wrapper .news_panel_each select{
+	width: 100%;
+	height: 37px;
+	border: none;
+	border-radius: 2px;
+	border: 1px solid rgba(35,122,197,.3);
+	margin-bottom: 2px;
+	padding:2px 2px 2px 10px;
+	color: #797979;
+	font-size: 1.2em;
+	transition: all .1s;
+}
+.news_panel_wrapper .news_panel_each input:focus{
+	background-color:  rgba(240, 240, 240,.3);
+	/*box-shadow: 2px 1px 1px #000;*/
+}
+.news_panel_wrapper .news_panel_each input[type="file"]{
+	background-color:  rgb(0, 115, 170);
+	color: rgba(236, 240, 245,.7);
+	padding-bottom: 40px;
+}
+.news_panel_wrapper .news_panel_each input[type="radio"]{
+	display: inline;
+	width: 5px;
+	margin: 0;
+	padding: 0;
+	height: 5px;
+}
+.news_panel_wrapper .news_panel_each input[type="submit"]{
+	margin: 12px 0px;
+	height: 40px;
+}
+.news_panel_wrapper .news_panel_each input[type="submit"]:hover{
+	color: rgb(0, 115, 170);
+	/*color: #EEE;*/
+}
+.news_panel_wrapper .news_panel_each a[href^=settings]{
+	text-decoration: none;
+	color: rgb(255, 193, 7) !important;
+	font-weight: bold;
+	font-size: .8em;
+}
+.news_panel_wrapper .news_panel_each a[href^=settings]:after{
+	content: "?";
+}
+.news_panel_wrapper .news_panel_each textarea{
+	width: 100%;
+	height: 100px;
+	resize: vertical;
+	padding: 10px;
+}
+.news_panel_wrapper .news_panel_each .end_text_editor{
+	width: 100%;
+	text-align: right;
+	padding: 4px 0px;
+}
+.news_panel_wrapper .news_panel_each button{
+	color: #eee;
+	font-size: 1em;
+	background-color: rgb(0,102,190);
+	border: none;
+	border-radius: 2px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0;
+	height: 30px;
+}
+.addBtnEffects i{
+	display: inline-block;
+	margin: 0;
+	width: 50px;
+	height: 30px;
+	font-size: 1.1em;
+	background-color: rgba(0,0,0,.2);
+	text-align: top;
+	padding-top: 7px;
+}
+.addBtnEffects span{
+	padding: 5px 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+p.error{
+	width: 100%;
+	display: inline-block;
+	padding: 12px;
+	padding-right: 5px;
+	margin: 0;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: bold;
+	color: #EEE;
+	background-color: rgb(220, 53, 69);
+}
+p.success{
+	width: 100%;
+	display: inline-block;
+	padding: 12px;
+	padding-right: 5px;
+	margin: 0;
+	font-size: 1.1em;
+	font-style: italic;
+	font-weight: bold;
+	color: #EEE;
+	background-color: rgb(40, 167, 69);
+}

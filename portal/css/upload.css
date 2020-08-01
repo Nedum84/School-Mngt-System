@@ -1,0 +1,314 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+.addBtnOpacity{
+	opacity: .6;
+	cursor: no-drop !important;
+	font-style: italic;
+}
+.contents .curriculum_result_wrapper{
+	width: 100%;
+	margin: 0;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	text-align: left;
+}
+.contents .curriculum_result_wrapper h4{
+/*	margin: 0;
+	padding: 6px;
+	font-size: 2em;
+	color: rgb(51,51,51);*/
+}
+.contents .curriculum_result_wrapper .cur_res_div{
+	width: 100%;
+	padding-bottom: 12px;
+}
+.contents .curriculum_result_wrapper .cur_res_div button{
+	/*padding: 10px 15px;*/
+/*	height: 60px;
+	color: #eee;
+	background-color: rgb(0,102,190);
+	border: none;
+	font-size: 1.2em;
+	border-radius: 2px;
+	font-weight: bold;*/
+}
+.uploadSelected{
+	background-color: rgb(255,87,51) !important;
+}
+.contents .curriculum_result_wrapper .res_cur{
+	width: 100%;
+}
+.contents .curriculum_result_wrapper .res_cur .curriculum,
+.contents .curriculum_result_wrapper .res_cur .result,
+.contents .curriculum_result_wrapper .res_cur .assignment{
+	width: 100%;
+}
+.contents .curriculum_result_wrapper .res_cur .curriculum,
+.contents .curriculum_result_wrapper .res_cur .assignment{
+	display: none;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss{
+	width: 100%;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss h4{
+	font-size: .9em;
+	margin: 0;
+	font-weight: bold;
+	color: rgb(137,124,130);
+	text-decoration: blink;
+	animation-name: blinks;
+	animation-delay: .0s;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes blinks {
+  0% { opacity: 0.8;padding-left: 0px; }
+  100% { opacity: 1; color: rgb(190,75,73); padding-left: 20px; }
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div{
+	width: 49.5%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 4px;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div label{
+	display: block;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div select,
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div input{
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid #9CB4D8;
+	margin-bottom: 4px;
+	padding:2px 2px 2px 8px;
+	color: #797979;
+	font-size: 1.3em;
+	transition: all .1s;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div select option{
+	padding-left: 8px;
+	height: 30px;
+	cursor: pointer;	
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div input[type=file]{
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div label#browse_label{
+	height: 40px;
+	width: 100%;
+	color: #eee;
+	padding-top: 8px;
+	font-size: 1.2em;
+	font-weight: lighter;
+	text-align: center;
+	background-color: rgb(190,75,73);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div button{
+	height: 40px;
+	width: 100%;
+	color: #eee;
+	border: none;
+	padding: 2px;
+	font-size: 1.2em;
+	font-weight: lighter;
+	text-align: center;
+	margin-top: 25px;
+	/*background-color: rgb(0,102,190);*/
+	background-color: rgb(255,87,51);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss .input_div button:disabled{
+	background-color: rgba(255,87,51,.5);
+	cursor: no-drop !important;
+}
+.contents .curriculum_result_wrapper .res_cur .inputss span.error{
+	display: block;
+	width: 100%;
+	padding: 12px;
+	text-align: center;
+	font-style: italic;
+	color: rgb(231, 80, 90);
+	font-weight: bold;
+	font-size: 1.1em;
+	background-color: rgb(242, 222, 222);
+}
+.contents .curriculum_result_wrapper .res_cur .inputss span.file_sel_feedback{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	color: rgb(231, 80, 90);
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.fError{
+	color: rgb(231,80,90);
+	display: inline;
+}
+.fSuccess{
+	color: green;
+	display: inline;
+}
+.contents .curriculum_result_wrapper .res_cur .uploaded_files{
+	padding-top: 20px;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded{
+	width: 100%;
+	padding: 2px;
+}
+.contents .curriculum_result_wrapper .res_cur h5{
+	margin: 0;
+	font-size: 1.4em;
+	padding: 8px;
+	color: #343434;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px;
+	border:1px solid #9CB4D8;
+	border-radius: 0px;
+	margin-bottom: 8px;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols:nth-child(even){
+	border-left:6px solid #9CB4D8;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols:nth-child(odd){
+	border-right:6px solid #9CB4D8;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols h4{
+	margin:0;
+	padding: 2px;
+	font-size: 1.5em;
+	color: rgb(176,108,117);
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols p{
+	width: 100%;
+	margin:0;
+	padding: 0px 2px;
+	font-size: 1.15em;
+	color: 555;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols p span{
+	color: rgb(176,108,117);
+	font-weight: bold;
+}
+.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols p button{
+	padding: 2px 18px;
+	text-decoration: none;
+	background-color: rgb(190,75,73);
+	/*background-color: #9CB4D8;*/
+	margin-top: 5px;
+	color: #eee;
+	border-radius: 1px;
+	border:none;
+}
+
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded.
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded{
+	width: 100%;
+	padding: 2px;
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 4px;
+	border:1px solid #9CB4D8;
+	border-radius: 3px;
+	margin-bottom: 8px;
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols h4,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols h4{
+	margin:0;
+	padding: 2px;
+	font-size: 1.5em;
+	color: rgb(176,108,117);
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols p,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols p{
+	width: 100%;
+	margin:0;
+	padding: 2px;
+	font-size: 1.15em;
+	color: 555;
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols p span,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols p span{
+	color: rgb(176,108,117);
+	font-weight: bold;
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols p button,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols p button{
+	padding: 2px 18px;
+	background-color: rgb(190,75,73);
+	color: #eee;
+	border-radius: 2px;
+	border:none;
+	margin-bottom: 8px;
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols p button.c_delete,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols p button.ass_delete{
+	background-color: rgb(0,102,190);
+}
+.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols p button.c_download,
+.contents .curriculum_result_wrapper .res_cur .show_ass_uploaded .ass_cols p button.ass_download{
+	background-color: rgb(255,87,51);
+}
+
+
+
+
+@media only screen and (max-width: 530px){
+	.contents .curriculum_result_wrapper .cur_res_div{
+		text-align: center;
+	}
+	.contents .curriculum_result_wrapper .cur_res_div button{
+		width: 95%;
+		margin-bottom: 8px;
+	}
+	.container_div .contents .curriculum_result_wrapper .res_cur{
+		width: 100%;
+		padding: 4px 8px;
+		display: block;
+	}
+	.container_div .contents .curriculum_result_wrapper .res_cur .inputss .input_div {
+		width: 100%;
+		display: block;
+	}
+	.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols{
+		width: 100%;
+		padding: 4px 8px;
+		display: block;
+	}
+	.contents .curriculum_result_wrapper .res_cur .show_c_uploaded .c_cols h4{
+		font-size: 1.2em;
+	}
+	.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols{
+		width: 100%;
+		padding: 4px 8px;
+		display: block;
+		margin-bottom: 5px;
+	}
+	.contents .curriculum_result_wrapper .res_cur .show_r_uploaded .r_cols h4{
+		font-size: 1.2em;
+	}
+}

@@ -1,0 +1,39 @@
+.container_div .profile_wrapper{
+	display: block;
+	padding: 1px;
+}
+.container_div .profile_wrapper h3,
+.container_div .profile_wrapper h4{
+	color: red;
+}
+.container_div .profile_wrapper p{
+	font-style: italic;
+	font-size: .9em;
+}
+.container_div .profile_wrapper span.u_p_details{
+	font-size: .7em;
+}
+.container_div .profile_wrapper .profile_cols{
+	font-weight: bold;
+	text-align: right;
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 3px 8px;
+	font-size: .95em;
+	border-right: 1px dotted #eee;
+	/*background-color: rgba(250, 250, 250,.5);*/
+}
+.container_div .profile_wrapper .profile_cols:nth-child(odd){
+	text-align: left;
+	border:none;
+}
+@media only screen and (max-width: 450px){
+	.container_div .profile_wrapper .profile_cols{
+		width: 100%;
+		border:none;
+		text-align: left !important;
+		border-bottom: 1px dotted #EEE !important;
+		padding: 8px 8px;
+	}
+}

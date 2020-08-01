@@ -1,0 +1,32 @@
+
+.dataTables_wrapper {
+  position: relative;
+  clear: both;
+  zoom: 1;
+}
+.dt-buttons{
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.dataTables_filter {
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+.dataTables_info {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  padding-left: 12px;
+}
+.dataTables_paginate {
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+}

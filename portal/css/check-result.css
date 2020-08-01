@@ -1,0 +1,122 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.contents .check_result_wrapper{
+	width: 100%;
+	padding: 0 ;
+	margin: 0;
+	padding-top: 20px;
+}
+.contents .check_result_wrapper .check_result{
+	width: 65%;
+	padding: 30px 20px;
+	margin: 0;
+	border: 1px solid #555;
+}
+.contents .check_result_wrapper .check_result .check_r_header{
+	width: 100%;
+	padding: 12px 0px;
+	text-align: left;
+}
+.contents .check_result_wrapper .check_result .check_r_header h3{
+	margin: 0;
+	text-align: left;
+	padding: 6px 0px;
+	font-size: 2em;
+	color: rgb(51,51,51);
+}
+.contents .check_result_wrapper .check_result .check_r_header h4{
+	margin: 0;
+	font-size: 1.3em;
+	color: rgb(137,121,121);
+	display: block;
+}
+.contents .check_result_wrapper .check_result .check_r_body input,
+.contents .check_result_wrapper .check_result .check_r_body select{
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-radius: 1px;
+	border: 1px solid #9CB4D8;
+	margin-bottom: 14px;
+	padding:2px 2px 2px 8px;
+	color: #797979;
+	font-size: 1.3em;
+	transition: all .1s;
+}
+.contents .check_result_wrapper .check_result .check_r_body select{
+	cursor: pointer;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	-o-appearance:none;
+	appearance:none;	
+}
+.contents .check_result_wrapper .check_result .check_r_body select option{
+	padding-left: 8px;
+	height: 30px;
+}
+.contents .check_result_wrapper .check_result .check_r_body span{
+	margin: 0;
+	font-size: 1.12em;
+	color: rgb(211,59,79);
+	font-style: italic;
+	display: block;
+	position: inherit;
+}
+.contents .check_result_wrapper .check_result .check_r_body .enter_btn{
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+.contents .check_result_wrapper .check_result .check_r_body button{
+	padding: 2px 15px;
+	background-color: rgb(254,96,59);
+	color: #eee;
+	border-radius: 2px;
+	border:none;
+	margin-bottom: 8px;
+	/*float:  right;*/
+	display: inline-block;
+	margin-top: 8px;
+	margin-right: 8px;
+	font-size: 1.3em;
+	text-align: right;
+	transition: all .18s;
+}
+@media only screen and (max-width: 800px){
+	.contents .check_result_wrapper .check_result{
+		width: 90%;
+		padding: 30px 10px;
+		margin: 0;
+		border: 1px solid #555;
+	}
+}
+
+/*school fees*/
+
+.contents .check_result_wrapper .check_result .sch_fees_body button{
+	background: radial-gradient(rgba(40,96,87,.5) 1%,#D8E1EA 5%, #D8E1EA 15%, rgba(40,96,144,1));
+	color: #FFF;
+	width: 90%;
+	min-height: 100px;
+	margin-bottom: 6px;
+	border: none;
+	border: 1px dotted #9CB4D8;
+	font-size: 3em;
+	/*border-radius: 10px;*/
+}
+.contents .check_result_wrapper .check_result .sch_fees_body button#school-fees-pay{
+	background: radial-gradient(#aaa 1%,#bbb 5%, #EEF0F4 15%,  rgba(253,119,87,1));	
+}
+@media only screen and (max-width: 500px){
+	.contents .check_result_wrapper .check_result .sch_fees_body button{
+		width: 98%;
+		font-size: 2em;
+	}
+}

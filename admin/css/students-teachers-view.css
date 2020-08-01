@@ -1,0 +1,239 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/*font-family: 'Roboto', sans-serif;*/
+}
+.contents .student_table{
+	width: 100%;
+	padding: 2px;
+	/*overflow-x: auto;*/
+}
+.contents .edit_header{
+	width: 100%;
+	position: relative;
+}
+.contents .edit_header h5{
+	margin: 4px 0;
+	font-size: 1.8em;
+	padding: 4px;
+	text-transform: uppercase;
+	color: #999;
+}
+.contents .edit_header h5 span{
+	color: #777;
+}
+.contents .edit_header form{
+	margin-bottom: 12px;
+	border-bottom: 1px solid rgb(243, 237, 246);
+	padding: 20px 4px;
+}
+.contents .edit_header select,.contents .edit_header input{
+	width: 33%;
+	height: 30px;
+	border: none;
+	padding: 4px 12px;
+	margin: 0;
+	font-size: 1.2em;
+	color: rgb(129,117,146);
+	border: 1px solid #9CB4D8;
+	border-radius: 2px;
+	transition: all .3s;
+}
+.contents .edit_header input:focus{
+	box-shadow: 2px 4px 10px #CED8E7;
+}
+.contents .edit_header select option{
+	height: inherit;
+	padding: 8px;
+}
+#print_class{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: -0;
+	background-color: rgb(254,96,59);
+	color: #FFF;
+	font-size: 1.1em;
+	border:none;
+	padding: 3px 8px;
+	display: none;
+}
+.contents .student_table table{
+	width: 100%;
+	/*border-collapse: collapse;*/
+	/*border:1px solid #343434;*/
+	text-align: left;
+	color: #515151;
+}
+.tab_hover_effect{
+	background-color: rgba(129, 117, 146,.4) !important;
+	color: #444 !important;
+}
+.contents .student_table table tr{
+	min-height: 35px;
+	width: 100%;
+	overflow: scroll;
+	background-color: auto;
+}
+.contents .student_table table thead tr{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #eee;
+	background-color: rgb(129,117,146);
+	font-size: .7em;
+}
+.contents .student_table table tr:nth-child(even){
+	background-color: rgba(243,237,246,.5);
+}
+.contents .student_table table tr td{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 4px;
+	font-size: 1em;
+	transition: .1s;
+}
+.contents .student_table table tr th span.fa{
+	display: inline-block;
+	background-color: rgb(40, 167, 69);
+	padding: 4px;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+	margin-left: 2px;
+}
+.contents .student_table table tr th span.fa span{
+	position: absolute;
+	display: inline-block;
+	min-height: 20px;
+	min-width: 250px;
+	bottom: 30px;
+	left: -20px;
+	padding: 12px 8px;
+	background-color: rgb(40, 167, 69);
+	border-radius: 3px;
+	border-bottom-right-radius: 12px;
+	border-top-left-radius: 12px;
+	text-transform: capitalize;
+	font-size: 1.2em;
+	cursor: default;
+	display: none;
+	z-index: 2;
+}
+.contents .student_table table tr th span.fa span:after{
+	content: " ";
+	height: 0px;
+	width: 0px;
+	position: absolute;
+	background-color: transparent;
+	bottom: -30px;
+	left: 15px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom:  20px solid transparent;
+	border-top: 20px solid rgb(40, 167, 69);
+	/*border-top: 20px solid red;*/
+}
+.contents .student_table table tr th span.fa span i.fa{
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	cursor: pointer;
+}
+.contents .student_table table tr th span.fa span a{
+	color: rgb(0, 115, 170);
+	text-decoration: underline;
+}
+
+.contents .student_table table tr td.reset_password{
+	color: #eee;
+	background-color: rgb(196,99,98);
+	cursor: pointer;
+}
+.contents .student_table table tr td.block_un_block{
+	color: #eee;
+	background-color: rgb(35,122,197);
+	cursor: pointer;
+}
+/*teachers view table*/
+.contents .student_table table.teachers td:nth-child(3),
+.contents .student_table table.teachers td:nth-child(4),
+.contents .student_table table.teachers td:nth-child(5){
+	cursor: pointer;
+	border-bottom: 1px solid rgb(0, 115, 170);
+}
+.contents .student_table table.teachers td:nth-child(6){
+	cursor: default;
+	border-bottom: 1px dotted rgb(136, 170, 212);
+}
+/*result table*/
+.contents .student_table table.result td:nth-child(4),
+.contents .student_table table.result td:nth-child(5){
+	cursor: default;
+	border-bottom: 1px solid rgb(136, 170, 212);
+	border-right: 1px solid rgb(136, 170, 212);
+	text-align: center;
+}
+.contents .student_table table td:focus{
+	background-color: rgb(129, 117, 146);
+	/*background-color: rgb(136, 170, 212);*/
+	color: #EEE;
+}
+.contents .student_table .st_button_div{
+	display: block;
+	text-align: left;
+}
+.contents .student_table button{
+	padding: 2px 15px;
+	background-color: rgb(190,75,73);
+	color: #eee;
+	border-radius: 2px;
+	border:none;
+	margin-bottom: 8px;
+	/*float:  right;*/
+	display: inline;
+	margin-top: 8px;
+	font-size: 1.3em;
+	transition: all .18s;
+}
+.contents .student_table button#registerStudent{
+	background-color: rgb(254,96,59);
+}
+
+
+
+/*@media print{
+	.container_div,.container_div *{visibility: collapse !important;}
+	.container_div .header_div,.container_div .nav_div{display: none !important;;width: 0px !important}
+	.container_div .student_table{
+		width: auto;
+	}
+
+	.container_div .student_table,
+	.container_div .student_table *{visibility: visible !important;}
+	.contents .edit_header h5,.contents .edit_header h5 *{
+		visibility: visible !important;
+		display: block;
+	}
+	.contents .edit_header form{
+		display: none !important;
+	}
+	.contents .student_table table thead tr{
+		background-color: initial;
+		font-size: .9em;
+	}
+	.contents .student_table table tr td,.contents .student_table table tr th{
+		border:1px solid rgba(0,0,0,.3);
+		padding: 4px;
+		font-size: 1.14em;
+		transition: .1s;
+	}
+
+	@page{
+		margin: 0 !important;
+	}
+}*/
